@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {BiCameraMovie, BiSearchAlt2} from "react-icons/bi";
 import {TbPokeball} from "react-icons/tb"
+
+import './Navbar.css';
+
 const Navbar = () =>{
     return(
         <nav id="navbar">
