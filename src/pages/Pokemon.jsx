@@ -1,6 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
+import './Pokemon.css';
+
 const Pokemon = () =>{
     const { id } = useParams();
     const[infos, setInfos] = useState(null);
@@ -21,27 +24,38 @@ const Pokemon = () =>{
             <div>
             {infos && (
                 <>
-                    <img src={infos.sprites.front_default} alt="" />
+                    <div className="container">
+                        <div className="esquerda quadrado">
+                            <div className="fundoImagem">
+                            <img src={infos.sprites.front_default} alt="" />
+                            </div>
+                                
+                        </div>
+                        <div className="direita quadrado" >
+                            <div className="stats">
+                                <div className="title">Status</div>
+                                <div className="linha">
+                                    {infos.stats.map((x)=>{
+                                        return (
+                                            <div>
+                                            <h3>{`${x.stat.name} - ${x.base_stat}`}</h3>
+                                            {/* <h3>{x.stat.name}</h3><p>{x.base_stat}</p> */}
+                                            
+                                            </div>  
+
+                                        )
+                                    })}
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
                     <p>{infos.name}</p>
                     {Object.values(infos.types).map((x)=>{
                          <p key={x.type}>{x.type}</p>
                     })}
-                    <div className="stats">
-                        <div className="title">Status</div>
-                        <div className="linha">
-                            {infos.stats.map((x)=>{
-                                return (
-                                    <div>
-                                    <h3>{`${x.stat.name} - ${x.base_stat}`}</h3>
-                                    {/* <h3>{x.stat.name}</h3><p>{x.base_stat}</p> */}
-                                    
-                                    </div>  
-
-                                )
-                            })}
-                        </div>
-                        
-                    </div>
+                    
                     <div className="moves">
                         <div className="title">Moves</div>
                         <div className="list">

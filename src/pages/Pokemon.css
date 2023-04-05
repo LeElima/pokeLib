@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quadrado{
+    width: 33%;
+    height: 100%;
+    padding: 5px;
+}
+.container .esquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px gray solid;
+}
+.container .fundoImagem{
+    display: flex;
+    justify-content: center;
+    border: 4px black solid;
+    border-radius: 50%;
+    height: 100%;
+
+}
+.container .esquerda img{
+    width: 75%;
+    height: 75%;
+}

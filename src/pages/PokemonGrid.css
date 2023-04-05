@@ -1,9 +1,14 @@
 .container .title{
-    color: #fff;
     font-size: 2.5rem;
+    display: flex;
     text-align: center;
     margin: 2rem 0 1rem;
-
+    justify-content: center;
+}
+.container .title {
+    text-align: center;
+    color: #f7d354;
+    text-shadow: 1px 1px 4px black;
 }
 .pokemon-container{
     display: flex;
@@ -14,17 +19,27 @@
     margin: 0 auto;
 }
 
-.pokemon-container div{
-    width: 20%;
-    color: #fff;
+.container div:has(div:hover)>div:not(:hover){
+    background-color: #888888;
+}
+
+/* .pokemon-container div{
+    width: 15%;
     margin-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #111;
+    background-color: #bdbdbd;
     padding: 1rem;
-}
-.pokemon-container div img{
+} */
+/* .pokemon-container div div{
+    color: #b30909;
+} */
+/* .pokemon-container div h2{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+} */
+/* .pokemon-container div img{
     max-width: 100%;
 }
 .pokemon-container div img,
@@ -32,7 +47,11 @@
 .pokemon-container div p{
     margin-bottom: 1rem;
 }
+.pokemon-container div a{
+    background-color: transparent;
+    color: #ffffff;
+}
 .pokemon-container div a:hover{
     background-color: transparent;
     color: #F7D354;
-}
+} */
