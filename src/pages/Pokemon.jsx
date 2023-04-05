@@ -24,17 +24,33 @@ const Pokemon = () =>{
             <div>
             {infos && (
                 <>
-                    <div className="container">
+                    <div className="linha">
                         <div className="esquerda quadrado">
                             <div className="fundoImagem">
-                            <img src={infos.sprites.front_default} alt="" />
+                                <img src={infos.sprites.front_default} alt="" />
                             </div>
+                            <div className="nomePokemon">
+                                <h3>{infos.name}</h3>
                                 
+                                {/* {Object.values(infos.types).map((x)=>{
+                                    <p key={x.type}>{x.type}</p>
+                                })} */}
+                            </div>
+                            <div className="type">
+                                    {infos.types.map((x)=>{
+                                        return(
+                                            <div className={`pokemon-type ${x.type.name}`}>
+                                                <span >{x.type.name}</span>
+                                            </div>
+                                            
+                                        )
+                                    })}
+                                </div>
                         </div>
                         <div className="direita quadrado" >
                             <div className="stats">
                                 <div className="title">Status</div>
-                                <div className="linha">
+                                <div className="linhaStatus">
                                     {infos.stats.map((x)=>{
                                         return (
                                             <div>
@@ -51,10 +67,7 @@ const Pokemon = () =>{
                         </div>
                     </div>
                     
-                    <p>{infos.name}</p>
-                    {Object.values(infos.types).map((x)=>{
-                         <p key={x.type}>{x.type}</p>
-                    })}
+                    
                     
                     <div className="moves">
                         <div className="title">Moves</div>
