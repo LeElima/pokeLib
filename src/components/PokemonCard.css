@@ -1,0 +1,36 @@
+.poke-card {
+    width: 15%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #bdbdbd;
+    padding: 1rem;
+    border: 2px solid black;
+}
+.poke-card h2{
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+.poke-card div img{
+    max-width: 100%;
+}
+.poke-card div img,
+.poke-card div h2, 
+.poke-card div p{
+    margin-bottom: 1rem;
+}
+.poke-card  a{
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+.poke-card  a:hover{
+    background-color: transparent;
+    color: #b8930c;
+}

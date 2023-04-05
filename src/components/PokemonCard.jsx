@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import '../pages/Pokemon.css';
+import './PokemonCard.css';
 const PokemonCard =(pokemon) =>{
     return(
         <div className="poke-card">
