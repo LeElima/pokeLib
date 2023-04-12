@@ -77,7 +77,7 @@
 .fighting   { background-color: #c03028; border-top-color: lighten(#c03028,15%); border-bottom-color: darken(#c03028,15%); }
 .water      { background-color: #6890f0; border-top-color: lighten(#6890f0,15%); border-bottom-color: darken(#6890f0,15%); }
 .poison     { background-color: #a040a0; border-top-color: lighten(#a040a0,15%); border-bottom-color: darken(#a040a0,15%); }
-.electrik   { background-color: #f8d030; border-top-color: lighten(#f8d030,15%); border-bottom-color: darken(#f8d030,15%); }
+.electric   { background-color: #f8d030; border-top-color: lighten(#f8d030,15%); border-bottom-color: darken(#f8d030,15%); }
 .ground     { background-color: #e0c068; border-top-color: lighten(#e0c068,15%); border-bottom-color: darken(#e0c068,15%); }
 .flying     { background-color: #a890f0; border-top-color: lighten(#a890f0,15%); border-bottom-color: darken(#a890f0,15%); }
 .ice        { background-color: #98d8d8; border-top-color: lighten(#98d8d8,15%); border-bottom-color: darken(#98d8d8,15%); }

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import PokemonCard from "../components/PokemonCard";
+import Loading from "../components/Loading"
 
 import './PokemonGrid.css';
 
@@ -42,7 +43,7 @@ const Home = () =>{
         <div className="container">
             <h2 className="title">Pokemons</h2>
             <div className="pokemon-container">
-                {pokemons.length === 0 && <p>Carregando...</p>}
+                {pokemons.length === 0 && <Loading />}
                 {pokemons.length > 0 && pokemons.map((pokemon)=> <PokemonCard key={pokemon.name} pokemon={pokemon} />)}
             </div>
         </div>
