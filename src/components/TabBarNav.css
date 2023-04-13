@@ -1,0 +1,16 @@
+.Tabs .nav{
+    display: flex;
+    justify-content: flex-start;
+    padding: 7px;
+}
+.Tabs .nav li{
+    margin: 2px;
+    cursor: pointer;
+    border: 2px solid #f3f3f3;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px;
+    background-color: rgb(187, 187, 187);
+    border-top-color: lighten(rgb(187, 187, 187),40%); 
+    border-bottom-color: darken(rgb(187, 187, 187),40%);
+}

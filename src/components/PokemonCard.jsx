@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import './PokemonCard.css';
 const PokemonCard =(pokemon) =>{
-    console.log(pokemon.pokemon.stats)
     return(
         <div className="poke-card">
             <div className="number">
