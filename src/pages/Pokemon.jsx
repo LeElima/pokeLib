@@ -32,18 +32,19 @@ const Pokemon = () =>{
     return(
         <div>
             
-            <div>
+            <div className="sistema">
             {infos && (
                 <>
                     <div className="linha">
                         <div className="esquerda quadrado">
-                            <div className="fundoImagem">
-                                <img src={infos.sprites.front_default} alt="" />
-                            </div>
                             <div className="nomePokemon">
                                 <h3>{infos.name}</h3>
                                 
                             </div>
+                            <div className="fundoImagem">
+                                <img src={infos.sprites.front_default} alt="" />
+                            </div>
+                            
                             <div className="type">
                                     {infos.types.map((x)=>{
                                         return(
@@ -55,37 +56,18 @@ const Pokemon = () =>{
                                     })}
                                 </div>
                         </div>
-                        <div className="direita quadrado" >
-                            <div className="stats">
-                                <div className="title">Status</div>
-                                <div className="linhaStatus">
-                                    {infos.stats.map((x)=>{
-                                        return (
-                                            <div>
-                                            <h3>{`${x.stat.name} - ${x.base_stat}`}</h3>
-                                            {/* <h3>{x.stat.name}</h3><p>{x.base_stat}</p> */}
-                                            
-                                            </div>  
-
-                                        )
-                                    })}
-                                </div>
-                            
-                            </div>
-                        </div>
+                        
                     </div>
-                    {infos == [] && <Loading />}
+                    <div className="linhaAba">
+                        <div className="abaNavegacao">
+                        {infos == [] && <Loading />}
                     {infos != [] && <TabBarNav key={infos.id} infos={infos}/>}
-                    
-                    
-                    {/* <div className="moves">
-                        <div className="title">Moves</div>
-                        <div className="list">
-                            {infos.moves.map(x=>{
-                                return <p>{x.move.name}</p>
-                            })}
                         </div>
-                    </div> */}
+                    
+                    </div>
+                    
+                    
+                    
                 </>
                 
             ) }

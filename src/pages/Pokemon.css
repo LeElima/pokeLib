@@ -1,10 +1,14 @@
+.sistema{
+    display: block;
+}
 .linha{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .quadrado{
-    width: 33%;
+    width: 60%;
     padding: 5px;
 }
 .linha .esquerda{
@@ -18,13 +22,13 @@
 .linha .fundoImagem{
     display: flex;
     justify-content: center;
-    border: 4px black solid;
-    border-radius: 50%;
+    border: 4px rgb(68, 64, 64) solid;
+    background-color: #FFF;
 
 }
 .linha .esquerda .fundoImagem img{
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
 }
 .linha .esquerda .nomePokemon{
     display: flex;
@@ -47,6 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 .pokemon-type {
     font-size: 15px;
